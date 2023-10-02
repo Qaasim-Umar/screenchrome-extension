@@ -1,0 +1,134 @@
+*{
+  font-family: "Sora", sans-serif;
+}
+.container {
+  width: 320px;
+  border-radius: 24px;
+  padding: 22px 18px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-flex{
+  display: flex;
+  align-items: center;
+  gap:.5rem;
+}
+.header-text {
+  color: #120b48;
+  font-weight: 700;
+}
+.settings-flex{
+  display: flex;
+  gap: .4rem;
+}
+.text {
+  color: #373169;
+  font-size: 14px;
+  margin-left: .6rem;
+}
+.tab-text1 {
+  color: #928fab;
+}
+.tab1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1;
+}
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin: .8rem 0;
+}
+.camera {
+  display: flex;
+  padding:5px 16px;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border: 1px #16114d solid ;
+}
+.camera-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .2rem;
+}
+.submit button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 8px;
+  color: #fff;
+  cursor: pointer;
+  align-self: stretch;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  background: #120b48;
+}
+.submit button:hover {
+  box-shadow: 1px 0px 10px #eee;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 24px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: #120b48;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #120b48;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}

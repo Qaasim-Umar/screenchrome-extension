@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Sora:wght@100;200;300;400;500;600;700;800&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="popup.css" />
+  <title>HelpMeOut</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="header-flex">
+        <img src="/assets/logo.png" />
+        <p class="header-text">HelpMeOut</p>
+      </span>
+      <div class="settings-flex">
+        <img src="/assets/settings.svg" alt="" />
+        <img src="/assets/close.svg" alt="" />
+      </div>
+    </div>
+    <p class="text">
+      This extension helps you record and share help videos with ease.
+    </p>
+    <div class="tabs">
+      <div class="tab1">
+        <img src="/assets/monitor.svg" alt="" />
+        <p class="tab-text1">Full screen</p>
+      </div>
+      <div class="tab1">
+        <img src="/assets/tabs.svg" alt="" />
+        <p>Current Tab</p>
+      </div>
+    </div>
+    <div class="camera">
+      <div class="camera-flex">
+        <img src="/assets/video.svg" alt="" />
+        <p>Camera</p>
+      </div>
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <div class="camera">
+      <div class="camera-flex">
+        <img src="/assets/record.svg" alt="" />
+        <p>Audio</p>
+      </div>
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <div class="submit">
+      <button id="start_video">Start Recording</button>
+    </div>
+  </div>
+  <script src="./popup.js"></script>
+</body>
+</html>
